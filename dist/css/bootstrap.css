@@ -3,6 +3,21 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.hide {
+  display: none;
+}
+.block {
+  width: 100%;
+  float: left;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -1126,6 +1141,10 @@ img {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -moz-transition: all all 0.2s ease-in-out ease 0s;
+  -webkit-transition: all all 0.2s ease-in-out ease 0s;
+  -o-transition: all all 0.2s ease-in-out ease 0s;
+  transition: all all 0.2s ease-in-out ease 0s;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2552,6 +2571,10 @@ output {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease 0s;
+  -webkit-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease 0s;
+  -o-transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease 0s;
+  transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease 0s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3458,6 +3481,10 @@ input[type="button"].btn-block {
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -moz-transition: all opacity 0.15s linear ease 0s;
+  -webkit-transition: all opacity 0.15s linear ease 0s;
+  -o-transition: all opacity 0.15s linear ease 0s;
+  transition: all opacity 0.15s linear ease 0s;
 }
 .fade.in {
   opacity: 1;
@@ -4991,6 +5018,10 @@ a.badge:focus {
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
+  -moz-transition: all border 0.2s ease-in-out ease 0s;
+  -webkit-transition: all border 0.2s ease-in-out ease 0s;
+  -o-transition: all border 0.2s ease-in-out ease 0s;
+  transition: all border 0.2s ease-in-out ease 0s;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5120,6 +5151,10 @@ a.thumbnail.active {
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -moz-transition: all width 0.6s ease ease 0s;
+  -webkit-transition: all width 0.6s ease ease 0s;
+  -o-transition: all width 0.6s ease ease 0s;
+  transition: all width 0.6s ease ease 0s;
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
@@ -6218,6 +6253,10 @@ button.close {
   -webkit-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+  -moz-transition: all 0.6s ease-in-out left ease 0s;
+  -webkit-transition: all 0.6s ease-in-out left ease 0s;
+  -o-transition: all 0.6s ease-in-out left ease 0s;
+  transition: all 0.6s ease-in-out left ease 0s;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
