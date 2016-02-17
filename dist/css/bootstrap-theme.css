@@ -8,7 +8,8 @@
 .main-slider .bx-controls-auto {
   display: none;
 }
-.block {
+.block,
+.upcomeing {
   width: 100%;
   float: left;
 }
@@ -861,6 +862,86 @@ header .logo img {
 .services ul li .serv-item:hover p {
   transform: scale(1) translate(0px, 0px);
   opacity: 1;
+}
+.upcomeing {
+  background: transparent none no-repeat scroll 0 0 / cover;
+  padding: 90px 0 340px;
+  position: relative;
+}
+.upcomeing .head_3 {
+  border-bottom: 1px solid;
+  color: #4a3f9f;
+  font-size: 43px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.upcomeing .head_3:before {
+  background: transparent url("../images/icon-border.png") repeat scroll 0 0;
+  bottom: -15px;
+  content: "";
+  height: 30px;
+  left: 49%;
+  position: absolute;
+  width: 29px;
+}
+.upcomeing-item h4 {
+  font-size: 34px;
+  margin-top: 20px;
+}
+.upcomeing-item ul {
+  background: rgba(11, 63, 129, 0.7) none repeat scroll 0 0;
+  display: inline-block;
+  padding: 25px 20px;
+}
+.upcomeing-item ul li {
+  float: left;
+  margin-bottom: 28px;
+  width: 100%;
+}
+.upcomeing-item ul li .date {
+  float: left;
+  margin-right: 17px;
+  margin-top: -6px;
+  padding: 2px;
+  text-align: center;
+  width: 60px;
+}
+.upcomeing-item ul li .date span {
+  color: #fff;
+  display: inline-block;
+  font-family: arial;
+  line-height: 1;
+}
+.upcomeing-item ul li .date span:first-child {
+  font-size: 50px;
+}
+.upcomeing-item ul li .date span:last-child {
+  font-size: 27px;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+.upcomeing-item ul li:last-child {
+  margin-bottom: 0;
+}
+.upcomeing-item ul li p {
+  background: #ddd7d7 none repeat scroll 0 0;
+  color: #2f3132;
+  display: flex;
+  font-size: 16px;
+  margin: 0;
+  padding: 9px 15px;
+}
+.pd-left {
+  margin-left: 40px;
+}
+.pd-right {
+  margin-right: 40px;
+}
+.parallax-mirror {
+  opacity: 0.4;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   .header-info .header-info-box .blue-box h2 {
