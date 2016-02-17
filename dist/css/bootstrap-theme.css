@@ -9,7 +9,8 @@
   display: none;
 }
 .block,
-.upcomeing {
+.upcomeing,
+footer {
   width: 100%;
   float: left;
 }
@@ -942,6 +943,44 @@ header .logo img {
 }
 .parallax-mirror {
   opacity: 0.4;
+}
+footer h4 {
+  color: #4a3f9f;
+  display: inline-block;
+  font-size: 38px;
+  padding: 50px 0 20px;
+  text-align: center;
+  width: 100%;
+}
+footer .footer-info {
+  background: #eae6e3 none repeat scroll 0 0;
+  padding: 60px 20px;
+  text-align: center;
+}
+footer .footer-info p {
+  color: #606162;
+  display: inline-block;
+  font-size: 21px;
+  text-align: center;
+}
+footer .footer-info i {
+  display: inline-block;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: top;
+  width: 30px;
+}
+footer .footer-info img {
+  color: red;
+}
+.icon-phone {
+  background: transparent url("../images/icon-phone.png") repeat scroll 0 0;
+}
+.icon-message {
+  background: transparent url("../images/icon-message.png") repeat scroll 0 0;
+}
+.icon-net {
+  background: transparent url("../images/icon-net.png") repeat scroll 0 0;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   .header-info .header-info-box .blue-box h2 {
