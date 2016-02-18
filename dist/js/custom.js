@@ -4,7 +4,7 @@
 
 			$("body").show();
 
-
+			$("body").cssAnimate();
 
 
 			var winwid = window.innerWidth;
@@ -97,7 +97,5 @@
 				setTimeout(function(){
 					runcode();
 				}, 300);
-
 			});
-
 		});

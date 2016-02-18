@@ -18,6 +18,8 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
     <!-- animate -->
+    <link href="css/animate.css" rel="stylesheet">
+
     <link href="css/fonts.css" rel="stylesheet">
 
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
@@ -34,15 +36,15 @@
 
 <div class="slider-area">
     <div class="main-slider">
-         <ul class="bxslider">
-            <li><img class="imgs" src="images/slide1.jpg"/></li>
-            <li><img src="images/slide1.jpg"/></li>
-         </ul>
-        <!--<div class="embed-responsive embed-responsive-16by9">-->
-            <!--<video autoplay loop class="imgs">-->
-                <!--<source src="video.mp4" type="video/mp4">-->
-            <!--</video>-->
-        <!--</div>-->
+         <!--<ul class="bxslider">-->
+            <!--<li><img class="imgs" src="images/slide1.jpg"/></li>-->
+            <!--<li><img src="images/slide1.jpg"/></li>-->
+         <!--</ul>-->
+        <div class="embed-responsive embed-responsive-16by9">
+            <video autoplay loop class="imgs">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="header-info">
             <div class="header-info-box">
                 <div class="blue-box">
@@ -121,7 +123,7 @@
             <div class="col-md-12">
                 <h3 class="head_3">Employee Upcoming Events</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 animateblock" data-animate-class="fadeInLeft">
                 <div class="upcomeing-item pd-right">
                     <h4>Birthdays</h4>
                     <ul>
@@ -149,7 +151,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 animateblock" data-animate-class="fadeInRight">
                 <div class="upcomeing-item pd-left">
                     <h4>Service Anniversaries</h4>
                     <ul>
@@ -207,6 +209,7 @@
 <script src="js/jquery.bxslider.min.js"></script>
 
 <!-- custom Javascript file -->
+<script src="js/plugin.js"></script>
 <script src="js/custom.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
