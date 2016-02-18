@@ -973,14 +973,14 @@ footer .footer-info i {
 footer .footer-info img {
   color: red;
 }
-.icon-phone {
-  background: transparent url("../images/icon-phone.png") repeat scroll 0 0;
+footer .footer-line {
+  background: #0b3f81;
+  padding: 15px 0;
 }
-.icon-message {
-  background: transparent url("../images/icon-message.png") repeat scroll 0 0;
-}
-.icon-net {
-  background: transparent url("../images/icon-net.png") repeat scroll 0 0;
+footer .footer-line p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   .header-info .header-info-box .blue-box h2 {
