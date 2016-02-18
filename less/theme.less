@@ -584,6 +584,7 @@ header
             transform: scale(0.5) translate(0px, 170px);
             opacity: 0;
             .transition(0.4s);
+
           }
         }
         &:hover p{
@@ -672,6 +673,7 @@ header
         font-size: 16px;
         margin: 0;
         padding: 9px 15px;
+        min-height: 60px;
       }
     }
   }
@@ -728,15 +730,72 @@ footer{
       font-size: 14px;
       color: #ffffff;
       text-align: center;
+      margin-bottom:0;
+      a{
+        color: #ffffff;
+        &:hover{
+          text-decoration:underline;
+        }
+      }
     }
   }
 }
 
+.icon-phone{
+  background: transparent url("../images/icon-phone.png") repeat scroll 0 0;
+}
+.icon-message{
+  background: transparent url("../images/icon-message.png") repeat scroll 0 0;
+}
+.icon-net{
+  background: transparent url("../images/icon-net.png") repeat scroll 0 0;
+}
+.login-page{
+  &:before{
+    display:none;
+  }
+}
+footer.abs
+{
+  bottom: 0;
+  position: fixed;
+}
+.login-box{
+  background: #ece7e4 none repeat scroll 0 0;
+  border-radius: 6px;
+  padding: 40px 50px;
+  max-width: 466px;
+  img{
+    margin-bottom: 32px;
+    width: auto;
+  }
+  form{
+    width: 100%;
+    input{
+      background: #dcdcda none repeat scroll 0 0;
+      border: 1px solid;
+      border-radius: 7px;
+      font-size: 18px;
+      height: 42px;
+      margin-bottom: 27px;
+      padding: 0 10px;
+      width: 100%;
+    }
 
+    button{
+      &:extend(.header-info .header-info-box a);
+      border: medium none;
+      padding: 6px 66px;
+      &:hover{
+        background: #e2430a none repeat scroll 0 0;
+      }
+    }
+  }
+}
 
-
-
-
+.login-page .header-info .header-info-box {
+  margin: 70px auto;
+}
 
 
 
@@ -788,10 +847,61 @@ footer{
   header .logo img {
     width: 100px;
   }
+  .pd-right {
+    margin-right: 0;
+  }
+  .pd-left {
+    margin-left: 0;
+  }
+  .upcomeing .head_3 {
+    font-size: 30px;
+  }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 530px) {
 
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 530px) {
+  header{
+    padding:0;
+  }
+  .right-bar-head span {
+    font-size: 18px;
+  }
+  .slider-area::before {
+    display:none;
+  }
+  .services {
+    padding: 20px 6px;
+  }
+  .services ul li {
+    width: 100%;
+  }
+  .upcomeing-item h4 {
+    font-size: 26px;
+  }
+  .upcomeing-item ul {
+    padding: 25px 10px;
+  }
+  footer h4 {
+    font-size: 30px;
+  }
+  footer .footer-info p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  footer .footer-info i {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .login-box {
+    padding: 40px 20px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -825,8 +935,20 @@ footer{
   .header-info .header-info-box {
     margin: 70px auto 0;
   }
-
+  .pd-right {
+    margin-right: 0;
+  }
+  .pd-left {
+    margin-left: 0;
+  }
+  .upcomeing .head_3 {
+    font-size: 35px;
+  }
 }
+
+
+
+
 @media (min-width: 768px){
   .services ul li .serv-item .serv-item-info h3 {
     font-size: 43px;
@@ -834,8 +956,19 @@ footer{
   .services ul li .serv-item .serv-item-info p {
     font-size: 18px;
   }
-}
 
+}
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .login-page{
+    .main-slider{
+      overflow:visible;
+    }
+    .header-info{
+      position:relative;
+    }
+  }
+
+}
 
 @media (min-width: 992px){
   .header-info .header-info-box .blue-box h2 {
@@ -865,6 +998,7 @@ footer{
   .header-info .header-info-box {
     margin: 10px auto 0;
   }
+
 }
 
 @media (min-width: 1200px){
@@ -885,6 +1019,15 @@ footer{
   }
   .services ul li {
     width: 20%;
+  }
+  .pd-right {
+    margin-right: 40px;
+  }
+  .pd-left {
+    margin-left: 40px;
+  }
+  .upcomeing .head_3 {
+    font-size: 43px;
   }
 }
 

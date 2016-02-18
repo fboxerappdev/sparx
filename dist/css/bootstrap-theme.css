@@ -755,7 +755,8 @@ header .logo img {
   line-height: 1.2;
   width: 100%;
 }
-.header-info .header-info-box a {
+.header-info .header-info-box a,
+.login-box form button {
   background: #f7581f none repeat scroll 0 0;
   border-radius: 7px;
   color: #fff;
@@ -934,6 +935,7 @@ header .logo img {
   font-size: 16px;
   margin: 0;
   padding: 9px 15px;
+  min-height: 60px;
 }
 .pd-left {
   margin-left: 40px;
@@ -981,6 +983,62 @@ footer .footer-line p {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 0;
+}
+footer .footer-line p a {
+  color: #ffffff;
+}
+footer .footer-line p a:hover {
+  text-decoration: underline;
+}
+.icon-phone {
+  background: transparent url("../images/icon-phone.png") repeat scroll 0 0;
+}
+.icon-message {
+  background: transparent url("../images/icon-message.png") repeat scroll 0 0;
+}
+.icon-net {
+  background: transparent url("../images/icon-net.png") repeat scroll 0 0;
+}
+.login-page:before {
+  display: none;
+}
+footer.abs {
+  bottom: 0;
+  position: fixed;
+}
+.login-box {
+  background: #ece7e4 none repeat scroll 0 0;
+  border-radius: 6px;
+  padding: 40px 50px;
+  max-width: 466px;
+}
+.login-box img {
+  margin-bottom: 32px;
+  width: auto;
+}
+.login-box form {
+  width: 100%;
+}
+.login-box form input {
+  background: #dcdcda none repeat scroll 0 0;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 18px;
+  height: 42px;
+  margin-bottom: 27px;
+  padding: 0 10px;
+  width: 100%;
+}
+.login-box form button {
+  border: medium none;
+  padding: 6px 66px;
+}
+.login-box form button:hover {
+  background: #e2430a none repeat scroll 0 0;
+}
+.login-page .header-info .header-info-box {
+  margin: 70px auto;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   .header-info .header-info-box .blue-box h2 {
@@ -996,7 +1054,8 @@ footer .footer-line p {
   .header-info .header-info-box .blue-box span {
     font-size: 25px;
   }
-  .header-info .header-info-box a {
+  .header-info .header-info-box a,
+  .login-box form button {
     font-size: 21px;
   }
   .services ul li .serv-item .serv-item-info p {
@@ -1020,6 +1079,54 @@ footer .footer-line p {
   header .logo img {
     width: 100px;
   }
+  .pd-right {
+    margin-right: 0;
+  }
+  .pd-left {
+    margin-left: 0;
+  }
+  .upcomeing .head_3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 530px) {
+  header {
+    padding: 0;
+  }
+  .right-bar-head span {
+    font-size: 18px;
+  }
+  .slider-area::before {
+    display: none;
+  }
+  .services {
+    padding: 20px 6px;
+  }
+  .services ul li {
+    width: 100%;
+  }
+  .upcomeing-item h4 {
+    font-size: 26px;
+  }
+  .upcomeing-item ul {
+    padding: 25px 10px;
+  }
+  footer h4 {
+    font-size: 30px;
+  }
+  footer .footer-info p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  footer .footer-info i {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .login-box {
+    padding: 40px 20px;
+    margin-bottom: 60px;
+  }
 }
 @media (min-width: 600px) {
   .header-info .header-info-box .blue-box h2 {
@@ -1034,7 +1141,8 @@ footer .footer-line p {
   .header-info .header-info-box .blue-box span {
     font-size: 25px;
   }
-  .header-info .header-info-box a {
+  .header-info .header-info-box a,
+  .login-box form button {
     font-size: 21px;
   }
   .services ul li .serv-item .serv-item-info p {
@@ -1052,6 +1160,15 @@ footer .footer-line p {
   .header-info .header-info-box {
     margin: 70px auto 0;
   }
+  .pd-right {
+    margin-right: 0;
+  }
+  .pd-left {
+    margin-left: 0;
+  }
+  .upcomeing .head_3 {
+    font-size: 35px;
+  }
 }
 @media (min-width: 768px) {
   .services ul li .serv-item .serv-item-info h3 {
@@ -1059,6 +1176,14 @@ footer .footer-line p {
   }
   .services ul li .serv-item .serv-item-info p {
     font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .login-page .main-slider {
+    overflow: visible;
+  }
+  .login-page .header-info {
+    position: relative;
   }
 }
 @media (min-width: 992px) {
@@ -1074,7 +1199,8 @@ footer .footer-line p {
   .header-info .header-info-box .blue-box span {
     font-size: 28px;
   }
-  .header-info .header-info-box a {
+  .header-info .header-info-box a,
+  .login-box form button {
     font-size: 24px;
   }
   .services ul li .serv-item .serv-item-info p {
@@ -1097,7 +1223,8 @@ footer .footer-line p {
   .services ul li .serv-item .serv-item-info h3 {
     font-size: 24px;
   }
-  .header-info .header-info-box a {
+  .header-info .header-info-box a,
+  .login-box form button {
     font-size: 28px;
   }
   .services ul li .serv-item .serv-item-info p {
@@ -1108,6 +1235,15 @@ footer .footer-line p {
   }
   .services ul li {
     width: 20%;
+  }
+  .pd-right {
+    margin-right: 40px;
+  }
+  .pd-left {
+    margin-left: 40px;
+  }
+  .upcomeing .head_3 {
+    font-size: 43px;
   }
 }
 @media (min-width: 1400px) {
@@ -1143,7 +1279,8 @@ footer .footer-line p {
   .header-info .header-info-box .blue-box span {
     font-size: 36px;
   }
-  .header-info .header-info-box a {
+  .header-info .header-info-box a,
+  .login-box form button {
     font-size: 31px;
   }
   .services ul li .serv-item .serv-item-info p {
